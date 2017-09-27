@@ -1,0 +1,188 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #f3f3f3;
+  background-image: url("../images/pattern.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.padding-t {
+  padding-top: 9em;
+}
+
+.zetta {
+  font-size: 1.1em;
+}
+
+.main {
+  font-weight: bold;
+}
+
+.sub {
+  letter-spacing: .35em ;
+  text-indent: .35em;
+}
+
+.box{
+  max-height: 8em;
+  background-color: transparent;
+  transition: background-color 0.7s ease, max-height 0.5s ease;
+  -webkit-transition: background-color 0.7s ease, max-height 0.5s ease;
+}
+
+.m-gutter {
+  margin-bottom: 2%;
+}
+
+.yotta {
+  font-size: 1.75rem;
+}
+
+.xs-1, .s-1 {
+  width: 100%;
+}
+
+.border {
+ border: 5px solid #000;
+}
+
+.letters {
+  margin: -1.2%;
+  vertical-align: middle
+}
+
+.red, .orange, .yellow, .green, .blue, .indigo, .violet {
+  transition: color .2s ease, font-size .2s ease;
+  -webkit-transition: color .2s ease, font-size .2s ease;
+}
+
+.red:hover {
+  color: red;
+  font-size: .8em;
+}
+
+.orange:hover {
+  color: orange;
+  font-size: .8em;
+}
+
+.yellow:hover {
+  color: yellow;
+  font-size: .8em;
+}
+
+.green:hover {
+  color: green;
+  font-size: .8em;
+}
+
+.blue:hover {
+  color: red;
+  font-size: .8em;
+}
+
+.indigo:hover {
+  color: indigo;
+  font-size: .8em;
+}
+
+.violet:hover {
+  color: violet;
+  font-size: .8em;
+}
+
+.blocks {
+  display: block;
+}
+
+.gutter-double {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.box:hover {
+ background-color: #fff;
+ max-height: 20em;
+}
+
+.white-space {
+  white-space: nowrap;
+}
+
+.inner-box {
+  opacity: 0;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
+.box:hover .inner-box {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .yotta {
+    font-size: 2.5rem;
+  }
+
+  .zetta {
+    font-size: 1.5rem;
+  }
+
+  .letters-space {
+    margin-right: 2%;
+  }
+
+  .blocks {
+    display: inline;
+  }
+
+  .gutter-double {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .float-right {
+    width: 49%;
+    float: right;
+  }
+
+  .float-left {
+    float: left;
+    width: 49%;
+  }
+
+  .m-gutter {
+    margin-bottom: 0%;
+    margin-right: 2%;
+  }
+
+  .yotta {
+    font-size: 3.25rem;
+  }
+
+  .zetta {
+    font-size: 2rem;
+  }
+
+  .gutter {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
